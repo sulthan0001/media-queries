@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHOTO GALLERY</title>
+    <style>
+
+      .background{
+        position: relative;
+      }
+
+     div{
+      position: absolute;
+     }
+      @media screen and (min-width:325px) and (max-width: 426px) {
+        .g1{
+          border: 3px solid black;
+          height: 50vh;
+          width: 50vh;
+          padding: 5px;
+          position: absolute;
+          background-color: aqua;
+          
+        }
+        .g2, .g3{
+          display: none;
+        }
+        
+        
+      }
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        .g2{
+          border: 3px solid black;
+          height: 60vh;
+          width: 60vh;
+          padding: 5px;
+          position: absolute;
+          background-color: gold;
+        }
+        .g1, .g3{
+          display: none;
+        }
+
+      }
+
+      @media screen and (min-width:769px) and (max-width:1024px) {
+        .g3{
+          border: 3px solid black;
+          height: 70vh;
+          width: 70vh;
+          padding: 5px;
+          position: absolute;
+          background-color: rgb(29, 176, 149);
+        }
+        .g1, .g2{
+          display: none;
+        }
+
+      }
+     
+      img{
+        border: 3px solid red;
+      }
+
+      button:hover{
+        background-color: blue;
+      }
+
+      div:hover{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+  
+ 
+    <div class="background">
+      <div class="g1">
+      <img src="./images/himalayan.jpg" height="155" width="153px"/>
+      <img src="./images/re.jpg" height="155" width="153"  />
+      <img src="./images/tvs.jpg" height="155" width="153"  />
+      <img src="./images/yamaha.jpg" height="155" width="153" />
+      
+      </div>
+      <div class="g2">
+      <img src="./images/pooja1.jpg"  height="121"  width="121" />
+      <img src="./images/pooja2.jpg"  height="121"  width="121" />
+      <img src="./images/pooja3.jpg"  height="121"  width="121" />
+      <img src="./images/pooja4.jpg"  height="121"  width="121" />
+      <img src="./images/pooja5.webp" height="121"  width="121" />
+      <img src="./images/pooja6.jpg"  height="121"  width="121" />
+      <img src="./images/pooja7.jpeg" height="121"  width="121" />
+      <img src="./images/pooja8.jpg"  height="121"  width="121" />
+      <img src="./images/pooja9.jpg"  height="121"  width="121" />
+      </div>
+       <div class="g3">
+        <img src="./images/boat.jpg"       height="104" width="104" />
+        <img src="./images/charminar.jpg"  height="104" width="104" />
+        <img src="./images/gate.jpeg"      height="104" width="104" />
+        <img src="./images/goa.jpg"        height="104" width="104" />
+        <img src="./images/golkonda.jpg"   height="104" width="104" />
+        <img src="./images/himalaya.jpg"   height="104" width="104" />
+        <img src="./images/indiagate.jpg"  height="104" width="104" />
+        <img src="./images/kedarnath.jpg"  height="104" width="104" />
+        <img src="./images/kerala.jpg"     height="104" width="104" />
+        <img src="./images/lotus.jpeg"     height="104" width="104" />
+        <img src="./images/redfort.jpg"    height="104" width="104" />
+        <img src="./images/tajmahal.jpg"   height="104" width="104" />
+        <img src="./images/temple.jpeg"    height="104" width="104" />
+        <img src="./images/tankbund.jpeg"  height="104" width="104" />
+        <img src="./images/valley.jpg"     height="104" width="104" />
+        <img src="./images/waterfalls.jpg" height="104" width="104" />
+      
+    </div>
+  </div>
+  <marquee behavior="scroll" direction="">
+    <button>
+      <p>Adjust the screen</p>
+    </button>
+  </marquee>
+  
+  
+  </body>
+</html>
